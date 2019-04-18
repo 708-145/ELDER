@@ -1,0 +1,5 @@
+#avisource("C:\Dokumente und Einstellungen\tobias\Desktop\ELDER_current\release_ELDER\amnesty320.avi")
+avisource("C:\Dokumente und Einstellungen\tobias\Desktop\ELDER_current\amnesty320.avi")
+#trim(5000,20000)
+#selectevery(1500,150)
+#trim(1,1000)

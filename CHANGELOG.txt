@@ -1,0 +1,145 @@
+# ELDER4XVID changelog:
+#
+# beta6b:
+#   * !! bitrate and size options are not regarded correctly !!
+#   * bugfix: obey -f parameter again (regression from beta6a)
+#   * print "frames so far" in x264 2pass and 3pass
+#   * AutoRes added to GUI
+#   * AutoRes bitrate mode added; not parallel yet
+#   * Xvid 1.1pass mode added; not parallel yet
+#   * save GUI settings to file
+#   * x264 3pass added to GUI
+#
+# beta6a:
+#   * new fps detection algorithm
+#   * fixed a bug with the x264 modes and avs pathes
+#
+# beta5f:
+#   * all data for job resume is written out but not used yet
+#   * muxing to mkv added for AVC encodes
+#   * muxing to avi and mkv added for ASP encodes
+#   * allow use of k and M as abbreviations for kilo and mega in cli
+#   * x264 2pass added to the GUI
+#
+# beta5e:
+#   * add bitrate, size and crf selection to GUI
+#   * GUI support for all modes
+#   * print "frames so far" in all modes
+#   * print output size error with sign
+#   * locking on the jobfiles implemented
+#
+# beta5d:
+#   * added SMP control to GUI
+#   * prints frames in the control window for xvid 2pass
+#   * fixed a bug in chunk computation
+#   * starts processes in lower priority
+
+# beta5c:
+#   * GUI: allows to select number of CPUs
+#   * better load balancing (when -m is defined)
+#   * cleaner code
+#   * nicer text output: always prints encoded time and output size error
+#   * first chunk was sometimes missing in x264 crf mode: fixed now
+#   * added x264 abr mode
+#   * added xvid crf2 mode: same size and bitrate distribution as x264's crf mode
+#   * fixed a few rate control bugs... still undersizes sometimes
+#
+# beta5b:
+#   * added windows cluster mode
+#   * added crf3 mode: bitrate is spent as in x264's crf mode
+#   * GUI checks input
+#
+# beta5a:
+#   * added a GUI
+#   * fixed muxing to mp4
+#   * split the project from ELDER4XVID
+#   * relies on PXPerl
+#
+# beta4c:
+#   * fixed parameter passing
+#   * muxing with correct fps now
+#   * new chunk formula to make muxing break less often
+#
+# beta4a:
+#   * splitted encode job into modules
+#
+# beta3:
+#   * parallelism fixed
+#
+# beta2:
+#   * dispose of mencoder
+#   * add installer
+#   * use mp4box for muxing to mp4
+#   * show progress
+#   * debug output suppressed
+#   * compile perl scripts on windows or ship perl.exe with ELDER
+#   * improved defaults for chunksize
+#
+# beta1:
+#   * fixed bug when trim() was used in the input avs
+#   * use xvid_encraw for 1st pass (stage A and stage B)
+#   * consistent naming for temporary files
+#   * parallelism broken
+#
+# alpha5:
+#   * modify perl for compatibility with Active Perl
+#   * OS dependent defaults
+#   * added cygwin1.dll to the exe bundle; needed by avimerge.exe
+#   * added x264.exe to the exe bundle; needed to get framecount
+#   * correct handling of pathes on both linux and windows
+#   * get number of frames from avisynth; option -f not needed anymore
+#
+# alpha4:
+#   * sometimes wrong location for trim(): fixed
+#   * StageC didn't start: fixed
+#   * automatic selection of number of chunks if not specified
+#   * delete intermediate files
+#
+# alpha3:
+#   * avimerge.exe added; merging step activated
+#   * distribution style changed: one part all exe files the other the scripts
+#   * changelog added
+#   * comments added
+#   * warning if chunks are too small added
+#   * size and bitrate options added
+#
+# alpha2:
+#   * fixed fps fixed; now gets correct fps from the avs file
+#   * #trim() not neccessary any more in the avs file
+#
+# alpha1:
+#   * first public release
+#   * working 2 pass encoding using cygwin
+#
+#
+#
+# X264:
+#
+# beta4c:
+#   * fixed parameter passing
+#   * muxing with correct fps now
+#   * new chunk formula to make muxing break less often
+#   * implemented new 2pass for x264 
+#
+# beta4b:
+#   * splitted encode job into modules
+#
+# beta3:
+#   * parallelism fixed
+#
+# beta2:
+#   * added installer
+#   * muxing to mp4
+#   * show progress
+#   * debug output suppressed
+#   * compile perl scripts on windows or ship perl.exe with ELDER
+#   * improved defaults for chunksize
+#
+# beta1:
+#   * initial release based on alpha5 of ELDER4XVID
+#   * uses XVID 1st pass and X264 2nd pass
+#   * fixed bug when trim() was used in the input avs
+#   * use xvid_encraw for 1st pass (stage A and stage B)
+#   * consistent naming for temporary files
+#   * parallelism broken
+#
